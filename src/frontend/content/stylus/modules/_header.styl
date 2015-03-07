@@ -1,0 +1,66 @@
+.header
+  width 100%
+  background #357252 url('../img/campinas.jpg') center center no-repeat
+  background-size cover
+  color #fff
+  text-align center
+  position relative
+  
+  &::before
+    content ''
+    width 100%
+    height 100%
+    position absolute
+    top 0
+    left 0
+    background rgba(53, 114, 82, 0.7)
+
+.header-content
+  @extends $centered-container
+  position relative 
+  z-index 1
+  
+.orcamento-logo
+  @extends $left
+  rem(31px)
+  line-height 32px
+  text-align center
+
+.orcamento-logo-subtitle
+   
+   rem(30px)
+   font-weight normal
+
+.nav-container
+  @extends $clearfix
+  margin-bottom 9em
+  
+.nav
+  @extends $right
+  
+.nav-list-item
+  @extends $inblock
+  margin-right 1em
+  
+  &:last-child
+    margin-right 0
+
+.nav-link
+  @extends $inblock
+  rem(20px)
+  color #fff
+  
+  &:hover
+    color #59ffbf
+
+.orcamento-text-container
+  margin-bottom 8em
+
+.orcamento-subtitle
+  @extends $txt-shadow
+  rem(57px)
+
+.orcamento-descricao
+  @extends $txt-shadow
+  rem(22px)
+  
